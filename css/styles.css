@@ -185,13 +185,14 @@ body {
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 32px;
   border-radius: 4px;
-  border-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border: #ffffff
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Маркетинг */
@@ -407,15 +408,23 @@ display: flex;
     padding: 16px 32px;
  }
 
-.clients-sots-list:hover .icon-clients,
+/* .clients-sots-list:hover .icon-clients,
 .clients-sots-list:focus .icon-clients,
 .clients-sots-list:hover,
-.clients-sots-list:focus
- {
+.clients-sots-list:focus  */
+
+.clients-sots .clients-sots-list:hover .icon-clients,
+.clients-sots .clients-sots-list:hover
+{
     fill: var(--accent-color) ;
     border-color : var(--accent-color);
 }
 
+.clients-sots-list .link-clients:focus .icon-clients
+{
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  }
 
 .icon-clients {
     fill: #AFB1B8;
