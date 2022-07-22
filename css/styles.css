@@ -379,7 +379,10 @@ background-color:#FFFFFF;
 }
 
 .icon-sots-comanda{
+  display: flex;
     fill: #AFB1B8;
+      justify-content: center;
+        align-items: center;
 }
 
 .item-comanda{
@@ -467,28 +470,29 @@ display: flex;
 .sots-futter {
     display: flex;
     gap: 10px;
-    justify-content: center;
 }
 
 .container .sots-merezhi{
-    background-color: #ececec;
+  margin-left: 70px;
+
 }
 .futter-list {
     display: flex;
     align-items: baseline;
-    background-color: red;
+}
 
+.sots-merezhi .title-sots {
+  font-weight: 700;
+  font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 
-.sots-merezhi .link-sots-futter {
-    display:flex;
-
-}
-.sots-merezhi .sots-futter {
-    display: flex;
-    margin-left: 70px;
-}
 .sots-futter .list-sots-futter:hover,
 .sots-futter .list-sots-futter:focus,
 .link-sots-futter:hover .icon-sots-futter,
@@ -509,21 +513,17 @@ display: flex;
 }
 
 .icon-sots-futter {
+  display: flex;
     fill: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .item-futter {
     background-color: #FFFFFF;
 }
-.title-sots . {
-    font-size: 14px;
-    Line-height: 1.1px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    font-style: normal;
-    margin-bottom: 20px;
-    width: 145px;
-}
+
 
 /* Портфоліо -------------------------------------*/
 .header-portfolio {
@@ -532,24 +532,25 @@ display: flex;
 
 .portfolio-button {
   font-family: inherit;
-  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
   text-align: center;
-  background-color: var(--title-backgraund-color);
+  background-color: #F5F4FA;
   padding: 6px 22px;
   min-width: 73px;
-  border-radius: 1px;
-  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: #F5F4FA;
+
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-list {
@@ -604,8 +605,11 @@ display: flex;
 }
 .examples-image {
   outline: 1px solid #eeeeee;
- box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  ;
+}
+
+.examples-image:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 .examples-list {
