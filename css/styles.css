@@ -178,20 +178,19 @@ body {
 .hero-button {
   font-family: inherit;
   cursor: pointer;
-  color: var(--white-color);
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 32px;
   border-radius: 4px;
-  border: #ffffff
+  border:var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -312,7 +311,6 @@ margin-bottom: 30px;
 
 /* Comanda */
 
-
 .comanda {
   background-color: #f5f4fa;
 }
@@ -353,22 +351,24 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 .comanda-title .sots-comanda {
     display: flex;
     margin-top: 16px;
-    margin-bottom: 30px;
-    margin-right: 32px;
-    margin-left: 32px;
     justify-content: center;
     gap: 10px;
 }
 
-.sots-comanda .list-sots-comanda:hover,
-.sots-comanda .list-sots-comanda:focus,
-.link-sots-comanda:hover .icon-sots-comanda,
-.link-sots-comanda:focus .icon-sots-comanda
- { background-color: var(--accent-color);
-    fill: #FFFFFF;
+.sots-comanda .link-sots-comanda:hover,
+.sots-comanda .link-sots-comanda:hover .icon-sots-comanda
+ { fill: #FFFFFF;
+   background-color: var(--accent-color);
+} 
+
+.sots-comanda .link-sots-comanda:focus .icon-sots-comanda,
+.sots-comanda .link-sots-comanda:focus
+{fill: #FFFFFF;
+  background-color: var(--accent-color);
 }
 
-.sots-comanda .list-sots-comanda {
+
+.sots-comanda .link-sots-comanda {
 display: flex;
 width: 44px;
 height: 44px;
@@ -390,8 +390,6 @@ background-color:#FFFFFF;
     background-color: #FFFFFF;
 }
 
-
-
 /* Company clients----------------------------*/
 
 .clients-sots {
@@ -399,7 +397,7 @@ display: flex;
 gap: 30px;
 
 }
-.clients-sots-list {
+.clients-sots-list .link-clients {
 display: flex;
     width: 170px;
     height: 92px;
@@ -408,23 +406,21 @@ display: flex;
     padding: 16px 32px;
  }
 
-/* .clients-sots-list:hover .icon-clients,
-.clients-sots-list:focus .icon-clients,
-.clients-sots-list:hover,
-.clients-sots-list:focus  */
-
-.clients-sots .clients-sots-list:hover .icon-clients,
-.clients-sots .clients-sots-list:hover
+.clients-sots .link-clients:hover .icon-clients,
+.clients-sots .link-clients:hover
 {
     fill: var(--accent-color) ;
     border-color : var(--accent-color);
 }
 
-.clients-sots-list .link-clients:focus .icon-clients
+.clients-sots-list .link-clients:focus .icon-clients,
+.clients-sots-list .link-clients:focus
 {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   }
+
+
 
 .icon-clients {
     fill: #AFB1B8;
@@ -453,16 +449,14 @@ display: flex;
   margin-top: 9px;
 }
 
-.address a:hover,
-.address a:focus {
+.address .link:hover .contact-link,
+.address .link:focus .contact-link {
   color: var(--accent-color);
 }
 
-.contact-link:focus {
-  color: var(--accent-color);
-}
-
-.contact-link:hover {
+.address .address-link:hover .link,
+.address-link .link:focus
+{
   color: var(--accent-color);
 }
 
@@ -502,15 +496,14 @@ display: flex;
 }
 
 
-.sots-futter .list-sots-futter:hover,
-.sots-futter .list-sots-futter:focus,
-.link-sots-futter:hover .icon-sots-futter,
-.link-sots-futter:focus .icon-sots-futter {
+.sots-futter .link-sots-futter:hover,
+.sots-futter .link-sots-futter:focus,
+.sots-futter .link-sots-futter:hover .icon-sots-futter,
+.sots-futter .link-sots-futter:focus .icon-sots-futter {
     background-color: var(--accent-color);
-    fill: #FFFFFF;
 }
 
-.sots-futter .list-sots-futter {
+.sots-futter .link-sots-futter {
     display: flex;
     width: 44px;
     height: 44px;
@@ -523,7 +516,7 @@ display: flex;
 
 .icon-sots-futter {
   display: flex;
-    fill: #AFB1B8;
+    fill: #ffffff;
     justify-content: center;
     align-items: center;
 
